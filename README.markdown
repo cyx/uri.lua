@@ -5,16 +5,16 @@ Basic module to parse / build URLs.
 ## usage
 
 ```lua
-    local uri = require('uri')
+local uri = require('uri')
 
-    uri.parse("http://example.com/some/path#frag")
+uri.parse("http://example.com/some/path#frag")
 
-    uri.build({
-        scheme = "http",
-        host = "example.com",
-        path = "/some/path",
-        fragment = "frag"
-    })
+uri.build({
+	scheme = "http",
+	host = "example.com",
+	path = "/some/path",
+	fragment = "frag"
+})
 ```
 
 ## install
