@@ -198,7 +198,7 @@ end
 local function parse(url)
 	local uri = { query = nil }
 
-	util.setauthority(uri, "")
+	util.set_authority(uri, "")
 
 	local url = tostring(url or "")
 
@@ -218,7 +218,7 @@ local function parse(url)
 	end)
 
 	url = gsub(url, "^//([^/]*)", function(v)
-		util.setauthority(uri, v)
+		util.set_authority(uri, v)
 		return ""
 	end)
 
@@ -244,7 +244,7 @@ end
 -- The authority is parsed to find the user, password, port and host if available.
 -- @param authority The string representing the authority
 -- @return a string with what remains after the authority was parsed
-function util.setauthority(uri, authority)
+function util.set_authority(uri, authority)
 	uri.authority = authority
 	uri.port = nil
 	uri.host = nil
