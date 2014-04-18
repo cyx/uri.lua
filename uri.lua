@@ -1,6 +1,7 @@
 -- The MIT License (MIT)
 -- 
--- Copyright (c) 2011-2013 <Bertrand Mansion>
+-- Copyright (c) 2014 Cyril David <cyx@cyx.is>
+-- Copyright (c) 2011-2013 Bertrand Mansion <bmansion@mamasam.com>
 -- 
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
